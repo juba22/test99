@@ -63,7 +63,7 @@ body{
     font-weight: bold;
     line-height: 50px;
 }
-@media(max-width : 360px){
+@media(max-width : 560px){
     .header{padding: 15px 0}
     .header .pull-right{
         display: none
@@ -157,7 +157,7 @@ body{
     visibility: visible
 }
 .fixed-header ul li a{padding: 25px 15px; transition: .32s ease}
-@media(max-width : 360px){
+@media(max-width : 560px){
     .fixed-header{
        display:none
     }
@@ -278,7 +278,7 @@ body{
 }
 .main-menu .btn-menu i{ margin-right: 5px }
 
-@media(max-width : 360px){
+@media(max-width : 560px){
     .main-menu .btn-menu, .main-menu ul{
         display: none;
     }
@@ -422,7 +422,7 @@ body{
     border-color: #ec7d1b
 }
 
-@media(max-width : 360px){
+@media(max-width : 560px){
     .slider .first-slider .slider-bg-title{
         font-size: 25px
     }
@@ -519,7 +519,7 @@ body{
     font-size: 13px;
 }
 
-@media(max-width : 360px){
+@media(max-width : 560px){
     .intro{padding: 50px 25px}
     .intro .into-right{
         width: 310px;
@@ -661,7 +661,7 @@ body{
     font-size: 13px 
 }
 
-@media(max-width : 360px){
+@media(max-width : 560px){
     .feature .image-box{
         margin: 0
     }
@@ -853,7 +853,7 @@ body{
     bottom:-150
 }
 
-@media(max-width : 360px){
+@media(max-width : 560px){
     .blog{
         padding: 100px 20px
     }
@@ -1090,7 +1090,7 @@ body{
     opacity: 1
 }
 
-@media(max-width : 360px){
+@media(max-width : 560px){
     .project .title-project{
         width: auto;
         padding: 20px 30px
@@ -1233,7 +1233,7 @@ body{
     width:450px;
     display: none
 }
-@media(max-width : 360px){
+@media(max-width : 560px){
     .faq{
         padding: 0px 20px;
     }
@@ -1337,7 +1337,7 @@ body{
     margin-top: 30px;
     font-family: 'Exo', sans-serif;
 }
-@media(max-width : 360px){
+@media(max-width : 560px){
     .clients .item-text{
         width: 300;
         margin-left: 50px;
@@ -1534,7 +1534,7 @@ body{
     transform:translateY(0);
     opacity: 1
 }
-@media(max-width : 360px){
+@media(max-width : 560px){
     .blog2{
         padding: 100px 0px
     }
@@ -1620,7 +1620,7 @@ body{
     opacity: 1
 }
 
-@media(max-width : 360px){
+@media(max-width : 560px){
     .subscripe{
         padding: 50px 40px;
         text-align: center;
@@ -1656,7 +1656,7 @@ body{
     font-size:13px;
     font-weight:700
 }
-@media(max-width : 360px){
+@media(max-width : 560px){
     .reserved{
         line-height: 1.6;
         background: #070f3c;

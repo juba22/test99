@@ -1,5 +1,7 @@
 /******** Style By JuBa *********/
-
+body, html{
+    overflow-x: hidden
+}
 body{
     font-family: 'Lato', sans-serif;
 }
@@ -61,14 +63,14 @@ body{
     font-weight: bold;
     line-height: 50px;
 }
-@media(max-width : 768px){
+@media(max-width : 360px){
     .header{padding: 15px 0}
     .header .pull-right{
         display: none
     }
     .header .pull-left{
         float: none;
-        width: 170px;
+        width: 160px;
         margin: auto
     }
 }
@@ -83,7 +85,8 @@ body{
     width: 100%;
     transition:.9s ease;
     padding: 10px;
-    transform:translateY(-110px)
+    /* display: none; */
+    transform:translateY(-110px);
 }
 .fixed-header.show{
     transform:translateY(0)
@@ -154,9 +157,9 @@ body{
     visibility: visible
 }
 .fixed-header ul li a{padding: 25px 15px; transition: .32s ease}
-@media(max-width : 768px)){
+@media(max-width : 360px){
     .fixed-header{
-        display: none
+       display:none
     }
 }
 
@@ -275,7 +278,7 @@ body{
 }
 .main-menu .btn-menu i{ margin-right: 5px }
 
-@media(max-width : 768px){
+@media(max-width : 360px){
     .main-menu .btn-menu, .main-menu ul{
         display: none;
     }
@@ -287,7 +290,7 @@ body{
         padding: 20px 15px;
     }
     .main-menu .icon-search .form-input {
-        top: 50px
+        top: 59px;
     }
     .main-menu .bar-btn{
         background: #ff6a00;
@@ -419,9 +422,9 @@ body{
     border-color: #ec7d1b
 }
 
-@media(max-width : 768px){
+@media(max-width : 360px){
     .slider .first-slider .slider-bg-title{
-        font-size: 30px
+        font-size: 25px
     }
     .slider .first-slider h4{margin-bottom: 10px}
     .slider .owl-prev,
@@ -429,18 +432,18 @@ body{
         display: none
     }
     .slider{
-        height: 600px;
+        height: 620px;
     }
     .slider .first-slider .left a{
         margin-right: 0;
         margin-bottom: 20px;
-        padding: 15px 20px;
+        padding: 10px 15px;
     }
     .slider .first-slider .right .video-btn{
         padding: 20px
     }
     .slider .first-slider .right h4{
-        font-size: 17px
+        font-size: 15px
     }
     
 }
@@ -519,12 +522,12 @@ body{
 @media(max-width : 360px){
     .intro{padding: 50px 25px}
     .intro .into-right{
-        width: 350px;
+        width: 310px;
         margin-top: 20px;
-        padding-left: 15px;
+        padding-left: 0;
     }
     .intro .into-right ul li{
-        font-size:14px
+        font-size: 13px;
     }
 }
 
@@ -658,7 +661,7 @@ body{
     font-size: 13px 
 }
 
-@media(max-width : 768px){
+@media(max-width : 360px){
     .feature .image-box{
         margin: 0
     }
@@ -684,11 +687,11 @@ body{
     margin-bottom: 75px;
 }
 .blog .block-box .block .img-blog{
-    width:345px;
+    width: 100%;
     height:250px;
     display:block;
     overflow:hidden;
-    position: relative
+    position: relative;
 }
 .blog .block img{transition:.5s ease; width:100%; height:100%}
 .blog .block .img-blog:before{
@@ -850,7 +853,7 @@ body{
     bottom:-150
 }
 
-@media(min-width : 768px){
+@media(max-width : 360px){
     .blog{
         padding: 100px 20px
     }
@@ -860,12 +863,13 @@ body{
     }
     .blog .blog-box-out{
         top: 310;
-        left: calc(50% - 255px);
+        left: calc(50% - 186px);
         margin-top: 25px;
-        padding: 30px 40px;
+        padding: 30px 60px;
+        width: auto;
     }
     .blog .blog-box-out .border-1{
-        width: 395px;
+        width: 325px;
     }
     .blog .blog-box-out .border-3,
     .blog .blog-box-out .border-2{
@@ -874,9 +878,13 @@ body{
     }
     .blog .blog-description p{width: 100%}
     .blog .image-bg-blog{
-        width: 335px;
+        width: 305px;
         height: 319px;
-        left: -24px;
+        left: -22px;
+        bottom: -147px;
+    }
+    .blog .block-box .block{
+        width:300px
     }
 }
 /** animation blog **/
@@ -899,10 +907,9 @@ body{
     padding-bottom: 100px;
 }
 .project .title-project{
-    width:600px;
+    width: 600px;
     margin:auto;
     font-family: 'Exo', sans-serif;
-
 }
 .project .title-project h4 {
     font-size: 16px;
@@ -1083,13 +1090,19 @@ body{
     opacity: 1
 }
 
-@media(min-width : 768px){
+@media(max-width : 360px){
     .project .title-project{
         width: auto;
         padding: 20px 30px
     }
     .project .title-project h4:before{
         left: 90
+    }
+    .project .project-slider{
+        width:311px
+    }
+    .project .img-slid{
+        width:100%
     }
 }
 
@@ -1220,17 +1233,18 @@ body{
     width:450px;
     display: none
 }
-@media(min-width : 768px){
+@media(max-width : 360px){
     .faq{
-        padding: 30px 35px;
+        padding: 0px 20px;
     }
     .faq .img-info .txt-under-img{
-        font-size: 20px
+        font-size: 18px;
     }
     .faq .img-info{
         right: 25px;
         bottom: -58px;
-        width: 315px;
+        width: 263px;
+        padding:15px 20px
     }
     .faq .img-info .icon-logo{
         right: -36px;
@@ -1242,6 +1256,9 @@ body{
     }
     .faq .head-accordian{
         font-size: 15px
+    }
+    .faq .title-accordian h3{
+        font-size: 20px
     }
     
 }
@@ -1320,10 +1337,13 @@ body{
     margin-top: 30px;
     font-family: 'Exo', sans-serif;
 }
-@media(min-width : 768px){
+@media(max-width : 360px){
     .clients .item-text{
-        width: 400px;
+        width: 300;
         margin-left: 50px;
+    }
+    .clients .clients-text{
+        margin: auto -21px;
     }
 }
 
@@ -1361,8 +1381,8 @@ body{
 .blog2 .blog-left{
     position:relative;
     color: #fff;
-    margin-left: 20px;
-    text-align: center
+    margin-left: 16px;
+    text-align: center;
 }
 .blog2 .blog-description h4 {
     font-size: 16px;
@@ -1514,7 +1534,7 @@ body{
     transform:translateY(0);
     opacity: 1
 }
-@media(max-width : 768px){
+@media(max-width : 360px){
     .blog2{
         padding: 100px 0px
     }
@@ -1522,14 +1542,18 @@ body{
         font-size: 30px
     }
     .blog2 .blog-description h4:before{
-        top:10px;
-        left: 80px
+        top: 8px;
+        left: 66px;
     }
     .blog2 .some-box{
         margin-bottom: 50px
     }
     .blog2 .box-blog2-info{
-        margin-left: 50px
+        margin-left: 23px;
+    }
+    .blog2 .blog-left{
+        margin:0;
+        padding: 0 5px
     }
 }
 
@@ -1596,7 +1620,7 @@ body{
     opacity: 1
 }
 
-@media(min-width : 768px){
+@media(max-width : 360px){
     .subscripe{
         padding: 50px 40px;
         text-align: center;
@@ -1604,7 +1628,8 @@ body{
         height: 297px;
     }
     .subscripe form input{
-        margin: 20px 0
+        margin: 20px 0;
+        width:250px
     }
     .subscripe .message i{
         margin: auto
@@ -1631,7 +1656,7 @@ body{
     font-size:13px;
     font-weight:700
 }
-@media(min-width : 768px){
+@media(max-width : 360px){
     .reserved{
         line-height: 1.6;
         background: #070f3c;

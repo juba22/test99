@@ -106,7 +106,7 @@ $(document).ready(function(){
                 dots: false
             },
             // breakpoint from 768 up
-            768: {
+            360: {
                 items:1,
                 dots: false
             },
@@ -195,7 +195,7 @@ $(document).ready(function(){
                 dots: false
             },
             // breakpoint from 768 up
-            768: {
+            360: {
                 items:3,
                 dots: false
             },

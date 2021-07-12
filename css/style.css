@@ -154,7 +154,7 @@ body{
     visibility: visible
 }
 .fixed-header ul li a{padding: 25px 15px; transition: .32s ease}
-@media(max-width : 768px){
+@media(max-width : 768px)){
     .fixed-header{
         display: none
     }
@@ -516,12 +516,15 @@ body{
     font-size: 13px;
 }
 
-@media(max-width : 768px){
-    .intro{padding: 50px 20px}
+@media(max-width : 360px){
+    .intro{padding: 50px 25px}
     .intro .into-right{
-        width: 450px;
+        width: 350px;
         margin-top: 20px;
         padding-left: 15px;
+    }
+    .intro .into-right ul li{
+        font-size:14px
     }
 }
 
@@ -847,7 +850,7 @@ body{
     bottom:-150
 }
 
-@media(max-width : 768px){
+@media(min-width : 768px){
     .blog{
         padding: 100px 20px
     }
@@ -1080,7 +1083,7 @@ body{
     opacity: 1
 }
 
-@media(max-width : 768px){
+@media(min-width : 768px){
     .project .title-project{
         width: auto;
         padding: 20px 30px
@@ -1217,7 +1220,7 @@ body{
     width:450px;
     display: none
 }
-@media(max-width : 768px){
+@media(min-width : 768px){
     .faq{
         padding: 30px 35px;
     }
@@ -1317,7 +1320,7 @@ body{
     margin-top: 30px;
     font-family: 'Exo', sans-serif;
 }
-@media(max-width : 768px){
+@media(min-width : 768px){
     .clients .item-text{
         width: 400px;
         margin-left: 50px;
@@ -1342,9 +1345,9 @@ body{
 /** Blog Shape 2 **/
 .blog2{
     background-image: url(../image/blog/service-style1-bg.jpg);
-    padding: 100px 160px;
+    padding: 100px 40;
     position: relative;
-    z-index: 9
+    z-index: 9;
 }
 .blog2:before{
     content:'';
@@ -1513,7 +1516,7 @@ body{
 }
 @media(max-width : 768px){
     .blog2{
-        padding: 100px 40px
+        padding: 100px 0px
     }
     .blog2 .blog-description h2{
         font-size: 30px
@@ -1593,7 +1596,7 @@ body{
     opacity: 1
 }
 
-@media(max-width : 768px){
+@media(min-width : 768px){
     .subscripe{
         padding: 50px 40px;
         text-align: center;
@@ -1628,7 +1631,7 @@ body{
     font-size:13px;
     font-weight:700
 }
-@media(max-width : 768px){
+@media(min-width : 768px){
     .reserved{
         line-height: 1.6;
         background: #070f3c;

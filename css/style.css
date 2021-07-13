@@ -1178,7 +1178,7 @@ body{
         padding: 20px 30px
     }
     .project .title-project h4:before{
-        left: 90
+        left: 48px;
     }
     .project .project-slider{
         width:311px
@@ -1334,7 +1334,7 @@ body{
         font-size: 50px;
     }
     .faq p.content-accordian{
-        width:390px
+        width: 350px;
     }
     .faq .head-accordian{
         font-size: 15px
@@ -1422,10 +1422,13 @@ body{
 @media(max-width : 560px){
     .clients .item-text{
         width: 300;
-        margin-left: 50px;
+        margin-left: 76px;
     }
     .clients .clients-text{
         margin: auto -21px;
+    }
+    .clients h4:before{
+        left:105
     }
 }
 
@@ -1624,14 +1627,14 @@ body{
         font-size: 30px
     }
     .blog2 .blog-description h4:before{
-        top: 8px;
-        left: 66px;
+        top: 10px;
+        left: 88px;
     }
     .blog2 .some-box{
         margin-bottom: 50px
     }
     .blog2 .box-blog2-info{
-        margin-left: 23px;
+        margin-left: 49px;
     }
     .blog2 .blog-left{
         margin:0;

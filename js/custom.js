@@ -217,6 +217,11 @@ $(document).ready(function(){
         $('.main-menu .overlay').removeClass('open-over')
     })
     
+    $('.main-menu .overlay').click(function(){
+        $('.main-menu ul').removeClass('show-menu');
+        $(this).removeClass('open-over')
+    })
+    
     
     
     $('.main-menu .menu li .fa-angle-right').click(function(){

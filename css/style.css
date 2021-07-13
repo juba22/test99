@@ -311,7 +311,7 @@ body{
         top: 0;
         right: 0;
         background: #000;
-        z-index: 9;
+        z-index: 99;
         width: 300px;
         height:100%;
         transition:.9s ease;
@@ -350,6 +350,35 @@ body{
         padding: 7px 10px;
         margin-top: -5px;
         display: block
+    }
+    .main-menu ul li .sup-menu{
+        position:static;
+        background:#000;
+        visibility:visible;
+        color:#fff;
+        opacity:1;
+        display: none;
+        transition:.5s ease;
+        margin-top:20px;
+    }
+    .main-menu ul.sup-menu li:last-child > ul.under-menu{
+        left:0;
+        top:350;
+        display:none
+    }
+    .main-menu .overlay{
+        position:fixed;
+        top:0;
+        right:0;
+        height:100%;
+        width:100%;
+        background:#000000a3;
+        z-index:9;
+        transform:translateX(100%);
+        transition:.7s ease
+    }
+    .main-menu .overlay.open-over{
+        transform:translateX(0)
     }
 }
 

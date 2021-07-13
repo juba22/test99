@@ -209,13 +209,19 @@ $(document).ready(function(){
     $('.bar-btn').click(function(e){
         e.stopPropagation();
         $('.main-menu ul').addClass('show-menu');
+        $('.main-menu .overlay').addClass('open-over')
     })
     
     $('.main-menu ul .fa-times').click(function(){
-        $('.main-menu ul').removeClass('show-menu')
+        $('.main-menu ul').removeClass('show-menu');
+        $('.main-menu .overlay').removeClass('open-over')
     })
     
     
+    
+    $('.main-menu .menu li .fa-angle-right').click(function(){
+        $('.main-menu ul li .sup-menu').slideToggle()
+    })
     
     
 });

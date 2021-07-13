@@ -208,11 +208,11 @@ $(document).ready(function(){
     // mobile menu
     $('.bar-btn').click(function(e){
         e.stopPropagation();
-        $('.menu-mobile').addClass('show-menu');
+        $('.main-menu ul').addClass('show-menu');
     })
     
-    $('.menu-mobile .menu i').click(function(){
-        $('.menu-mobile').removeClass('show-menu')
+    $('.main-menu ul .fa-times').click(function(){
+        $('.main-menu ul').removeClass('show-menu')
     })
     
     

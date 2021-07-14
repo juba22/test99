@@ -1,6 +1,6 @@
 /******** Style By JuBa *********/
 body, html{
-    overflow-x: hidden
+    /* overflow-x: hidden */
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -311,11 +311,11 @@ body{
         top: 0;
         right: 0;
         background: #000;
-        z-index: 99;
+        z-index: 9999;
         width: 300px;
         height:100%;
         transition:.9s ease;
-        transform:translateX(305px)
+        transform:translateX(305px);
     }
     .main-menu ul.show-menu{
         transform:translateX(0)
@@ -335,6 +335,9 @@ body{
         border-left:5px solid #ff6a00;
         transition:.5s ease;
         
+    }.main-menu .menu li a{
+        display:block;
+        padding: 0;
     }
     .main-menu ul .fa-times{
         position:absolute;
@@ -349,7 +352,8 @@ body{
         background:#4a4a4a;
         padding: 7px 10px;
         margin-top: -5px;
-        display: block
+        display: block;
+        transition:.5s ease
     }
     .main-menu ul li .sup-menu{
         position:static;
@@ -358,8 +362,9 @@ body{
         color:#fff;
         opacity:1;
         display: none;
-        transition:.5s ease;
         margin-top:20px;
+        height: auto;
+        box-shadow: none;
     }
     .main-menu ul.sup-menu li:last-child > ul.under-menu{
         left:0;
@@ -379,6 +384,9 @@ body{
     }
     .main-menu .overlay.open-over{
         transform:translateX(0)
+    }
+    .main-menu .menu li .fa-angle-right.trans{
+        transform:rotate(90deg)
     }
 }
 
@@ -604,6 +612,7 @@ body{
         width: 310px;
         margin-top: 20px;
         padding-left: 0;
+        max-width: 100%;
     }
     .intro .into-right ul li{
         font-size: 13px;
@@ -966,7 +975,7 @@ body{
         bottom: -147px;
     }
     .blog .block-box .block{
-        width: 338px;
+        width: 100%;
     }
 }
 /** animation blog **/
@@ -1204,7 +1213,7 @@ body{
     border-bottom:2px solid #ec7d1b;
     width: 517px;
     font-family: 'Exo', sans-serif;
-    z-index: 9;
+    z-index: 3;
 }
 .faq .img-info h4{
     color: #ec7d1b;
@@ -1412,7 +1421,8 @@ body{
     width: 800px;
     text-align: center;
     overflow: hidden;
-    margin: 30px auto
+    margin: 30px auto;
+    max-width: 100%;
 }
 .clients .clients-text h3{
     color: #2739a7;
@@ -1452,7 +1462,7 @@ body{
     background-image: url(../image/blog/service-style1-bg.jpg);
     padding: 100px 40;
     position: relative;
-    z-index: 9;
+    z-index: 4;
 }
 .blog2:before{
     content:'';
@@ -1504,7 +1514,8 @@ body{
     height: 400px;
     position:relative;
     perspective:400px;
-    overflow:hidden
+    overflow:hidden;
+    max-width: 100%;
 }
 .blog2 .img-blog2:after{
     background:#000000a1;
@@ -1634,7 +1645,8 @@ body{
         margin-bottom: 50px
     }
     .blog2 .box-blog2-info{
-        margin-left: 49px;
+        margin-left: 16%;
+        width: 262px;
     }
     .blog2 .blog-left{
         margin:0;
@@ -1710,7 +1722,7 @@ body{
         padding: 50px 40px;
         text-align: center;
         margin: 40px 0;
-        height: 297px;
+        height: 315px;
     }
     .subscripe form input{
         margin: 20px 0;
@@ -1749,3 +1761,22 @@ body{
         padding: 12px 40px
     }
 }   
+
+/** Button Up **/
+.button-up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #ec7d1b;
+    z-index: 4;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    cursor:pointer;
+    display: none
+}
+.button-up i{margin-top:5px}
